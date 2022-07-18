@@ -1,0 +1,32 @@
+{
+  "name": "CosDirectLink",
+  "version": "1.0.0",
+  "summary": "This is the description of CosDirectLink.",
+  "description": "It is used for integrating cosmopoliton chatbot feature in users application.",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "RAMraghuram": "ram309591@gmail.com"
+  },
+  "platforms": {
+    "ios": "13.0"
+  },
+  "homepage": "https://github.com/RaghuramLekkala/CosDirectLink",
+  "source": {
+    "git": "https://github.com/RaghuramLekkala/CosDirectLink.git",
+    "tag": "1.0.0"
+  },
+  "source_files": "CosDirectLink/**/*.{swift}",
+  "resources": "CosDirectLink/**/*.{png,jpeg,jpg,storyboard,xib,xcassets}",
+  "frameworks": "UIKit",
+  "dependencies": {
+    "IQKeyboardManagerSwift": [
+      "~> 6.5.10"
+    ]
+  },
+  "requires_arc": true,
+  "swift_versions": "5.3",
+  "swift_version": "5.3"
+}

@@ -1,0 +1,6 @@
+framework module CosDirectLink {
+  umbrella header "CosDirectLink-umbrella.h"
+
+  export *
+  module * { export * }
+}

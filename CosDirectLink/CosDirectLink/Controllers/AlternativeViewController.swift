@@ -15,7 +15,7 @@ protocol AlternativeViewControllerDelegate:class {
     func webSocketCallAgain()
 }
 
-class AlternativeViewController: UIViewController {
+public class AlternativeViewController: UIViewController {
     
     
 
@@ -70,7 +70,7 @@ class AlternativeViewController: UIViewController {
     }
    
     //MARK: - viewDidLoad
-    override func viewDidLoad() {
+    public override func viewDidLoad() {
         super.viewDidLoad()
         navigationItem.title = "Rose, Resident Mischief-Maker?"
         
@@ -100,11 +100,11 @@ class AlternativeViewController: UIViewController {
 
 //MARK: - UITableViewDataSource
 extension  AlternativeViewController: UITableViewDataSource{
-    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+    public func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return HomeViewController.messages.count
     }
     
-    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+    public func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let message = HomeViewController.messages[indexPath.row]
         let intTotalrow = tableView.numberOfRows(inSection:indexPath.section)
         switch message.kind {

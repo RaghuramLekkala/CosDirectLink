@@ -13,7 +13,7 @@
         <!--Home View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="HomeViewController" customModule="PADirectLink" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="HomeViewController" id="BYZ-38-t0r" customClass="HomeViewController" customModule="CosDirectLink" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -87,7 +87,7 @@
         <!--Messages-->
         <scene sceneID="2nC-pu-5ca">
             <objects>
-                <viewController id="P5o-ez-6bP" customClass="ChatViewController" customModule="PADirectLink" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="P5o-ez-6bP" customClass="ChatViewController" customModule="CosDirectLink" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="VVg-wY-Iso">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -103,7 +103,7 @@
         <!--Alternative View Controller-->
         <scene sceneID="U4z-0L-eHs">
             <objects>
-                <viewController id="ROj-i7-eli" customClass="AlternativeViewController" customModule="PADirectLink" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="AlternativeViewController" id="ROj-i7-eli" customClass="AlternativeViewController" customModule="CosDirectLink" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="SvO-aY-5K2">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>

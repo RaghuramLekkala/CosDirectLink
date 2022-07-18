@@ -19,7 +19,7 @@ public class HomeViewController: UIViewController {
    static var messages:[Message] = []
     
     let apiManager = ApiManager()
-    func isValidInput(Input:String) -> Bool {
+    private func isValidInput(Input:String) -> Bool {
         let RegEx = "\\w{3,18}"
         let Test = NSPredicate(format:"SELF MATCHES %@", RegEx)
         return Test.evaluate(with: Input)
@@ -39,10 +39,10 @@ public class HomeViewController: UIViewController {
     
     public override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
+        print("Hey we are in viewWillApear")
         navigationController?.isNavigationBarHidden = true
         if let
             tokenValue = UserDefaults.standard.string(forKey: "token"){
-            
             apiManager.post(endpoint: "/tokens/refresh", token: tokenValue) {
                 DispatchQueue.main.async {
                     if let
@@ -55,7 +55,7 @@ public class HomeViewController: UIViewController {
                 self.performSegue(withIdentifier: K.alternateChatSegue, sender: self)
                 }
             }
-            
+
         }
     }
     
@@ -69,6 +69,7 @@ public class HomeViewController: UIViewController {
     }
     public override func viewDidLoad() {
         super.viewDidLoad()
+        print("Here in viewDidLoad")
     }
     
     
