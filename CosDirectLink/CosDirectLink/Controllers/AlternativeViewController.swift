@@ -76,9 +76,34 @@ public class AlternativeViewController: UIViewController {
         
         navigationItem.hidesBackButton = true
         tableView.dataSource = self
-        tableView.register(UINib(nibName: K.tableViewCellIdentifier, bundle: nil), forCellReuseIdentifier: K.tableViewCellIdentifier)
-        tableView.register(MyCellTableViewCell.nib(), forCellReuseIdentifier: MyCellTableViewCell.identifier)
-        tableView.register(QuickReplyTableViewCell.nib(), forCellReuseIdentifier: QuickReplyTableViewCell.identifier)
+        
+        let podBundle = Bundle(for:AlternativeViewController.self)
+            if let bundleURL = podBundle.url(forResource: "CosDirectLink", withExtension: "bundle") {
+                if let bundle = Bundle(url: bundleURL) {
+                    let cellNib = UINib(nibName: MessageCell.identifier, bundle: bundle)
+                    tableView.register(cellNib, forCellReuseIdentifier: MessageCell.identifier)
+                } else {
+                    assertionFailure("Could not load the bundle")
+                }
+                if let bundle = Bundle(url: bundleURL) {
+                    let cellNib = UINib(nibName: MyCellTableViewCell.identifier, bundle: bundle)
+                    tableView.register(cellNib, forCellReuseIdentifier: MyCellTableViewCell.identifier)
+                } else {
+                    assertionFailure("Could not load the bundle")
+                }
+                if let bundle = Bundle(url: bundleURL) {
+                    let cellNib = UINib(nibName: QuickReplyTableViewCell.identifier, bundle: bundle)
+                    tableView.register(cellNib, forCellReuseIdentifier: QuickReplyTableViewCell.identifier)
+                } else {
+                    assertionFailure("Could not load the bundle")
+                }
+            } else {
+                assertionFailure("Could not create a path to the bundle")
+            }
+    
+        
+//        tableView.register(MyCellTableViewCell.nib(), forCellReuseIdentifier: MyCellTableViewCell.identifier)
+//        tableView.register(QuickReplyTableViewCell.nib(), forCellReuseIdentifier: QuickReplyTableViewCell.identifier)
         view.addSubview(tableView)
         
         //MARK: - IsNetworkAvailable

@@ -7,11 +7,11 @@
 
 import UIKit
 
-class MessageCell: UITableViewCell, UICollectionViewDelegateFlowLayout {
+ class MessageCell: UITableViewCell, UICollectionViewDelegateFlowLayout {
     static let identifier = "MessageCell"
     
     static func nib() -> UINib{
-        return UINib(nibName: "MessageCell", bundle: nil)
+        return UINib(nibName: "MessageCell", bundle: Bundle.main)
     }
     var senderId: String = ""
     
@@ -24,7 +24,7 @@ class MessageCell: UITableViewCell, UICollectionViewDelegateFlowLayout {
     
     var attachments = [Attachments]()
     
-    override func awakeFromNib() {
+     override func awakeFromNib() {
         super.awakeFromNib()
         senderMessageLabel.isUserInteractionEnabled = true
         senderMessageLabel.isEditable = false
@@ -96,7 +96,7 @@ extension UITextView {
 }
 
 extension MessageCell: UITextViewDelegate{
-    func textView(_ textView: UITextView, shouldInteractWith URL: URL, in characterRange: NSRange, interaction: UITextItemInteraction) -> Bool {
+     func textView(_ textView: UITextView, shouldInteractWith URL: URL, in characterRange: NSRange, interaction: UITextItemInteraction) -> Bool {
         print("URL is: ", URL)
         return false
     }

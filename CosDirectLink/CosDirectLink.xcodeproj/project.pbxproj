@@ -11,16 +11,9 @@
 		89342D6E287EB237004387B4 /* MyCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89342D51287EB236004387B4 /* MyCell.swift */; };
 		89342D6F287EB237004387B4 /* MyCellTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89342D52287EB236004387B4 /* MyCellTableViewCell.swift */; };
 		89342D70287EB237004387B4 /* TextCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89342D53287EB236004387B4 /* TextCollectionViewCell.swift */; };
-		89342D71287EB237004387B4 /* MyCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 89342D54287EB236004387B4 /* MyCell.xib */; };
-		89342D72287EB237004387B4 /* MessageCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 89342D55287EB236004387B4 /* MessageCell.xib */; };
 		89342D73287EB237004387B4 /* QuickReplyCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89342D56287EB236004387B4 /* QuickReplyCollectionViewCell.swift */; };
 		89342D74287EB237004387B4 /* QuickReplyTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89342D57287EB236004387B4 /* QuickReplyTableViewCell.swift */; };
-		89342D75287EB237004387B4 /* QuickReplyCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 89342D58287EB236004387B4 /* QuickReplyCollectionViewCell.xib */; };
-		89342D76287EB237004387B4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 89342D59287EB236004387B4 /* Main.storyboard */; };
-		89342D77287EB237004387B4 /* TextCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 89342D5B287EB236004387B4 /* TextCollectionViewCell.xib */; };
-		89342D78287EB237004387B4 /* QuickReplyTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 89342D5C287EB236004387B4 /* QuickReplyTableViewCell.xib */; };
 		89342D79287EB237004387B4 /* MessageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89342D5D287EB236004387B4 /* MessageCell.swift */; };
-		89342D7A287EB237004387B4 /* MyCellTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 89342D5E287EB236004387B4 /* MyCellTableViewCell.xib */; };
 		89342D7B287EB237004387B4 /* extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89342D5F287EB236004387B4 /* extensions.swift */; };
 		89342D7C287EB237004387B4 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89342D61287EB236004387B4 /* HomeViewController.swift */; };
 		89342D7D287EB237004387B4 /* AlternativeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89342D62287EB236004387B4 /* AlternativeViewController.swift */; };
@@ -34,6 +27,13 @@
 		89342D85287EB237004387B4 /* SenderType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89342D6B287EB236004387B4 /* SenderType.swift */; };
 		89342D86287EB237004387B4 /* MessageType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89342D6C287EB236004387B4 /* MessageType.swift */; };
 		89342D87287EB237004387B4 /* MySocketManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89342D6D287EB236004387B4 /* MySocketManager.swift */; };
+		8935F3F92886A21E0056B9AE /* MessageCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8935F3F82886A21E0056B9AE /* MessageCell.xib */; };
+		897334122885372800572C8B /* MyCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 89342D54287EB236004387B4 /* MyCell.xib */; };
+		897334142885372800572C8B /* QuickReplyCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 89342D58287EB236004387B4 /* QuickReplyCollectionViewCell.xib */; };
+		897334152885372800572C8B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 89342D59287EB236004387B4 /* Main.storyboard */; };
+		897334162885372800572C8B /* TextCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 89342D5B287EB236004387B4 /* TextCollectionViewCell.xib */; };
+		897334172885372800572C8B /* QuickReplyTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 89342D5C287EB236004387B4 /* QuickReplyTableViewCell.xib */; };
+		897334182885372800572C8B /* MyCellTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 89342D5E287EB236004387B4 /* MyCellTableViewCell.xib */; };
 		89C7AC05287EB0A40091CF43 /* CosDirectLink.h in Headers */ = {isa = PBXBuildFile; fileRef = 89C7AC03287EB0A40091CF43 /* CosDirectLink.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
 
@@ -43,7 +43,6 @@
 		89342D52287EB236004387B4 /* MyCellTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyCellTableViewCell.swift; sourceTree = "<group>"; };
 		89342D53287EB236004387B4 /* TextCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TextCollectionViewCell.swift; sourceTree = "<group>"; };
 		89342D54287EB236004387B4 /* MyCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MyCell.xib; sourceTree = "<group>"; };
-		89342D55287EB236004387B4 /* MessageCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MessageCell.xib; sourceTree = "<group>"; };
 		89342D56287EB236004387B4 /* QuickReplyCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QuickReplyCollectionViewCell.swift; sourceTree = "<group>"; };
 		89342D57287EB236004387B4 /* QuickReplyTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QuickReplyTableViewCell.swift; sourceTree = "<group>"; };
 		89342D58287EB236004387B4 /* QuickReplyCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = QuickReplyCollectionViewCell.xib; sourceTree = "<group>"; };
@@ -65,6 +64,7 @@
 		89342D6B287EB236004387B4 /* SenderType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SenderType.swift; sourceTree = "<group>"; };
 		89342D6C287EB236004387B4 /* MessageType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MessageType.swift; sourceTree = "<group>"; };
 		89342D6D287EB236004387B4 /* MySocketManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MySocketManager.swift; sourceTree = "<group>"; };
+		8935F3F82886A21E0056B9AE /* MessageCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MessageCell.xib; sourceTree = SOURCE_ROOT; };
 		89C7AC00287EB0A40091CF43 /* CosDirectLink.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = CosDirectLink.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		89C7AC03287EB0A40091CF43 /* CosDirectLink.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CosDirectLink.h; sourceTree = "<group>"; };
 		89C7AC04287EB0A40091CF43 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -100,7 +100,7 @@
 				89342D52287EB236004387B4 /* MyCellTableViewCell.swift */,
 				89342D53287EB236004387B4 /* TextCollectionViewCell.swift */,
 				89342D54287EB236004387B4 /* MyCell.xib */,
-				89342D55287EB236004387B4 /* MessageCell.xib */,
+				8935F3F82886A21E0056B9AE /* MessageCell.xib */,
 				89342D56287EB236004387B4 /* QuickReplyCollectionViewCell.swift */,
 				89342D57287EB236004387B4 /* QuickReplyTableViewCell.swift */,
 				89342D58287EB236004387B4 /* QuickReplyCollectionViewCell.xib */,
@@ -248,13 +248,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				89342D7A287EB237004387B4 /* MyCellTableViewCell.xib in Resources */,
-				89342D77287EB237004387B4 /* TextCollectionViewCell.xib in Resources */,
-				89342D75287EB237004387B4 /* QuickReplyCollectionViewCell.xib in Resources */,
-				89342D78287EB237004387B4 /* QuickReplyTableViewCell.xib in Resources */,
-				89342D71287EB237004387B4 /* MyCell.xib in Resources */,
-				89342D72287EB237004387B4 /* MessageCell.xib in Resources */,
-				89342D76287EB237004387B4 /* Main.storyboard in Resources */,
+				897334122885372800572C8B /* MyCell.xib in Resources */,
+				897334142885372800572C8B /* QuickReplyCollectionViewCell.xib in Resources */,
+				897334152885372800572C8B /* Main.storyboard in Resources */,
+				897334162885372800572C8B /* TextCollectionViewCell.xib in Resources */,
+				8935F3F92886A21E0056B9AE /* MessageCell.xib in Resources */,
+				897334172885372800572C8B /* QuickReplyTableViewCell.xib in Resources */,
+				897334182885372800572C8B /* MyCellTableViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -452,6 +452,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = DE0288FB284A2090985C8958 /* Pods-CosDirectLink.debug.xcconfig */;
 			buildSettings = {
+				BUILD_LIBRARY_FOR_DISTRIBUTION = NO;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
@@ -478,6 +479,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = CE4FEF42223E787215C77331 /* Pods-CosDirectLink.release.xcconfig */;
 			buildSettings = {
+				BUILD_LIBRARY_FOR_DISTRIBUTION = NO;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;

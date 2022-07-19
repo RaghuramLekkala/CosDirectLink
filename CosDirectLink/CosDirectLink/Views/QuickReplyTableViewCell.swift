@@ -25,7 +25,20 @@ class QuickReplyTableViewCell: UITableViewCell, UICollectionViewDataSource, UICo
 
     override func awakeFromNib() {
         super.awakeFromNib()
-        quickReplyCollectionView.register(QuickReplyCollectionViewCell.nib(), forCellWithReuseIdentifier: QuickReplyCollectionViewCell.identifier)
+        
+        let podBundle = Bundle(for:QuickReplyTableViewCell.self)
+            if let bundleURL = podBundle.url(forResource: "CosDirectLink", withExtension: "bundle") {
+                if let bundle = Bundle(url: bundleURL) {
+                    let cellNib = UINib(nibName: QuickReplyCollectionViewCell.identifier, bundle: bundle)
+                    quickReplyCollectionView.register(cellNib, forCellWithReuseIdentifier: QuickReplyCollectionViewCell.identifier)
+                } else {
+                    assertionFailure("Could not load the bundle")
+                }
+            } else {
+                assertionFailure("Could not create a path to the bundle")
+            }
+        
+//        quickReplyCollectionView.register(QuickReplyCollectionViewCell.nib(), forCellWithReuseIdentifier: QuickReplyCollectionViewCell.identifier)
         
         quickReplyCollectionView.dataSource = self
         quickReplyCollectionView.delegate = self

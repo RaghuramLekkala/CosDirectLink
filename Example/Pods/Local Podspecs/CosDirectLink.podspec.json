@@ -20,6 +20,11 @@
   },
   "source_files": "CosDirectLink/**/*.{swift}",
   "resources": "CosDirectLink/**/*.{png,jpeg,jpg,storyboard,xib,xcassets}",
+  "resource_bundles": {
+    "CosDirectLink": [
+      "CosDirectLink/**/*.{png,jpeg,jpg,storyboard,xib,xcassets}"
+    ]
+  },
   "frameworks": "UIKit",
   "dependencies": {
     "IQKeyboardManagerSwift": [

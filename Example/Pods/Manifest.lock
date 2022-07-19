@@ -15,7 +15,7 @@ EXTERNAL SOURCES:
     :path: "../CosDirectLink/"
 
 SPEC CHECKSUMS:
-  CosDirectLink: e7fd1e41e2344223a4198362dcc5d4b703a53cba
+  CosDirectLink: 19046618234389864f18bff4bca2ab14c5325cb0
   IQKeyboardManagerSwift: 52962c76ab33532f15ad9f3ff4e5715eda5335bb
 
 PODFILE CHECKSUM: f25a0cdb2e5f249561a4d6e892e6fbd945c50706

@@ -26,8 +26,25 @@ class MyCellTableViewCell: UITableViewCell, UICollectionViewDataSource, UICollec
     override func awakeFromNib() {
         width = contentView.frame.size.width
         super.awakeFromNib()
-        myCellCollectionView.register(MyCell.nib(), forCellWithReuseIdentifier: MyCell.identifier)
-        myCellCollectionView.register(TextCollectionViewCell.nib(), forCellWithReuseIdentifier: TextCollectionViewCell.identifier)
+        let podBundle = Bundle(for:MyCellTableViewCell.self)
+            if let bundleURL = podBundle.url(forResource: "CosDirectLink", withExtension: "bundle") {
+                if let bundle = Bundle(url: bundleURL) {
+                    let cellNib = UINib(nibName: MyCell.identifier, bundle: bundle)
+                    myCellCollectionView.register(cellNib, forCellWithReuseIdentifier: MyCell.identifier)
+                } else {
+                    assertionFailure("Could not load the bundle")
+                }
+                if let bundle = Bundle(url: bundleURL) {
+                    let cellNib = UINib(nibName: TextCollectionViewCell.identifier, bundle: bundle)
+                    myCellCollectionView.register(cellNib, forCellWithReuseIdentifier: TextCollectionViewCell.identifier)
+                } else {
+                    assertionFailure("Could not load the bundle")
+                }
+            } else {
+                assertionFailure("Could not create a path to the bundle")
+            }
+//        myCellCollectionView.register(MyCell.nib(), forCellWithReuseIdentifier: MyCell.identifier)
+//        myCellCollectionView.register(TextCollectionViewCell.nib(), forCellWithReuseIdentifier: TextCollectionViewCell.identifier)
         contentView.addSubview(myCellCollectionView)
         myCellCollectionView.dataSource = self
         myCellCollectionView.delegate = self

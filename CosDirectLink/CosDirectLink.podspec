@@ -9,7 +9,10 @@ Pod::Spec.new do |spec|
   spec.homepage     = "https://github.com/RaghuramLekkala/CosDirectLink"
   spec.source       = { :git => "https://github.com/RaghuramLekkala/CosDirectLink.git", :tag => "#{spec.version}" }
   spec.source_files = "CosDirectLink/**/*.{swift}"
-  spec.resource    = "CosDirectLink/**/*.{png,jpeg,jpg,storyboard,xib,xcassets}"
+  spec.resources = 'CosDirectLink/**/*.{png,jpeg,jpg,storyboard,xib,xcassets}'
+  spec.resource_bundles = {
+    'CosDirectLink' => ['CosDirectLink/**/*.{png,jpeg,jpg,storyboard,xib,xcassets}']
+  }
   spec.framework    = "UIKit"
   spec.dependency 'IQKeyboardManagerSwift', '~> 6.5.10'
   spec.requires_arc = true

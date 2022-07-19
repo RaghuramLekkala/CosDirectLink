@@ -31,7 +31,6 @@ class MyCell: UICollectionViewCell {
     }
     override func awakeFromNib() {
         super.awakeFromNib()
-        
         mainView.layer.borderWidth = 0.5
         buttonPressedLabel.layer.borderWidth = 0.5
         descriptionLabel.textColor = .gray
